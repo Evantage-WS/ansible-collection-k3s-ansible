@@ -1,5 +1,7 @@
 # Automated build of HA k3s Cluster with `kube-vip` and MetalLB
 
+## !!!!! PATCHED VERSION of https://github.com/techno-tim/k3s-ansible, 'kubectl' is renamed to 'k3s kubectl' and added an extra variable to all.yml to add extra server-args from the calling playbook !!!!!
+
 ![Fully Automated K3S etcd High Availability Install](https://img.youtube.com/vi/CbkEWcUZ7zM/0.jpg)
 
 This playbook will build an HA Kubernetes cluster with `k3s`, `kube-vip` and MetalLB via `ansible`.
