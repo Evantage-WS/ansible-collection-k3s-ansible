@@ -232,7 +232,7 @@
 
         - name: Apply BGP manifests
           ansible.builtin.command:
-            cmd: kubectl apply -f /tmp/k3s/cilium-bgp.yaml
+            cmd: k3s kubectl apply -f /tmp/k3s/cilium-bgp.yaml
           register: apply_cr
           changed_when: "'configured' in apply_cr.stdout or 'created' in apply_cr.stdout"
           failed_when: "'is invalid' in apply_cr.stderr"

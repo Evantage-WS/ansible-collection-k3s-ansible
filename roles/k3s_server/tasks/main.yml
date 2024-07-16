@@ -141,11 +141,11 @@
   #                     would be undefined. This will not be the case during playbook execution.
   # noqa jinja[invalid]
 
-- name: Create kubectl symlink
-  file:
-    src: /usr/local/bin/k3s
-    dest: /usr/local/bin/kubectl
-    state: link
+# - name: Create kubectl symlink
+#   file:
+#     src: /usr/local/bin/k3s
+#     dest: /usr/local/bin/kubectl
+#     state: link
 
 - name: Create crictl symlink
   file:
